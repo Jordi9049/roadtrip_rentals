@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81BD99AA-45B5-4FE4-B1B0-FBFEE214A4D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RoadTripRentals</RootNamespace>
+    <AssemblyName>RoadTripRentals</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Jordan\frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddCustomer.Designer.cs">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddCar.Designer.cs">
+      <DependentUpon>frmAddCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddModel.Designer.cs">
+      <DependentUpon>frmAddModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddPayments.Designer.cs">
+      <DependentUpon>frmAddPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddRentalCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddRentalCost.Designer.cs">
+      <DependentUpon>frmAddRentalCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddRentals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmAddRentals.Designer.cs">
+      <DependentUpon>frmAddRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditCar.Designer.cs">
+      <DependentUpon>frmEditCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditCustomer.Designer.cs">
+      <DependentUpon>frmEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditModel.Designer.cs">
+      <DependentUpon>frmEditModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditPayments.Designer.cs">
+      <DependentUpon>frmEditPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditRental.Designer.cs">
+      <DependentUpon>frmEditRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditRentalCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmEditRentalCost.Designer.cs">
+      <DependentUpon>frmEditRentalCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainCar.Designer.cs">
+      <DependentUpon>frmMainCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainModel.Designer.cs">
+      <DependentUpon>frmMainModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainPayments.Designer.cs">
+      <DependentUpon>frmMainPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainRentalCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainRentalCost.Designer.cs">
+      <DependentUpon>frmMainRentalCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainRentals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainRentals.Designer.cs">
+      <DependentUpon>frmMainRentals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSupplier.Designer.cs">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteSupplier.Designer.cs">
+      <DependentUpon>frmDeleteSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisplaySupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisplaySupplier.Designer.cs">
+      <DependentUpon>frmDisplaySupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSupplier.Designer.cs">
+      <DependentUpon>frmEditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Jordan\frmMainCustomer.Designer.cs">
+      <DependentUpon>frmMainCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderHistory.Designer.cs">
+      <DependentUpon>frmOrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderMain.Designer.cs">
+      <DependentUpon>frmOrderMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderStock.Designer.cs">
+      <DependentUpon>frmOrderStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplierMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplierMain.Designer.cs">
+      <DependentUpon>frmSupplierMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyCar.cs" />
+    <Compile Include="MyCustomer.cs" />
+    <Compile Include="MyEntity.cs" />
+    <Compile Include="MyException.cs" />
+    <Compile Include="MyGlobals.cs" />
+    <Compile Include="MyModel.cs" />
+    <Compile Include="MySupplier.cs" />
+    <Compile Include="MyValidation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoadTripRentalsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoadTripRentalsDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Jordan\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmAddCar.resx">
+      <DependentUpon>frmAddCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmAddModel.resx">
+      <DependentUpon>frmAddModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmAddPayments.resx">
+      <DependentUpon>frmAddPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmAddRentalCost.resx">
+      <DependentUpon>frmAddRentalCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmAddRentals.resx">
+      <DependentUpon>frmAddRentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmEditCar.resx">
+      <DependentUpon>frmEditCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmEditCustomer.resx">
+      <DependentUpon>frmEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmEditModel.resx">
+      <DependentUpon>frmEditModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmEditPayments.resx">
+      <DependentUpon>frmEditPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmEditRental.resx">
+      <DependentUpon>frmEditRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmEditRentalCost.resx">
+      <DependentUpon>frmEditRentalCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmMainCar.resx">
+      <DependentUpon>frmMainCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmMainModel.resx">
+      <DependentUpon>frmMainModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmMainPayments.resx">
+      <DependentUpon>frmMainPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmMainRentalCost.resx">
+      <DependentUpon>frmMainRentalCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmMainRentals.resx">
+      <DependentUpon>frmMainRentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSupplier.resx">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteSupplier.resx">
+      <DependentUpon>frmDeleteSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisplaySupplier.resx">
+      <DependentUpon>frmDisplaySupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditSupplier.resx">
+      <DependentUpon>frmEditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Jordan\frmMainCustomer.resx">
+      <DependentUpon>frmMainCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderHistory.resx">
+      <DependentUpon>frmOrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderMain.resx">
+      <DependentUpon>frmOrderMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderStock.resx">
+      <DependentUpon>frmOrderStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplierMain.resx">
+      <DependentUpon>frmSupplierMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RoadTripRentalsDataSet.xsc">
+      <DependentUpon>RoadTripRentalsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RoadTripRentalsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RoadTripRentalsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RoadTripRentalsDataSet.xss">
+      <DependentUpon>RoadTripRentalsDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rentalIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplierIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadtripRentalsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadtripRentalsIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadtripRentalsIcon 1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
